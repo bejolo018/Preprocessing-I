@@ -50,10 +50,112 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	font-size: 62.5%
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	background-color: blanchedalmond;
 }
 
+@plain-old-white: white;
+@plain-old-black: black;
+
+// container
+.container {
+	max-width:100rem;
+	margin: 0 auto;
+}
+
+// header and nav
+header {
+	border-bottom: 1px solid @plain-old-black;
+	display: flex;
+	justify-content: center;
+	font-size: 2rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	nav {
+		margin-bottom: 2rem;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	:hover{
+		color: red;
+	}
+	
+}
+
+// About me content
+.about-content{
+	display: flex;
+	width: 98%;
+	flex-direction: column;
+	background-color: @plain-old-white;
+	border: 1px solid @plain-old-black;
+	border-radius: .5rem;
+	padding: 1rem;
+	margin-top: 2rem;
+
+	.mainpage-content{
+		display: flex;
+		margin-top: 1rem;
+		color:@plain-old-black;
+		justify-content: flex-end;
+		align-items: flex-end;
+		font-size: 1.5rem;
+	}
+}
+
+.skills-content{
+	display:flex; 
+	color: @plain-old-black;
+	width: 30%;
+	flex-wrap: wrap;
+	margin-left: 45rem;
+	flex-direction: column;
+	font-size: 3rem;
+	margin-top: -23rem;
+	
+	h1{
+		font-size: 4.5rem;
+	}
+}
+
+//portfolio page
+
+.portfolio-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.card {
+		border: 1px solid @plain-old-black ;
+		width: 49%;
+		display: flex;
+		justify-content: space-around;
+		background-color: @plain-old-white;
+		border-radius: .5rem;
+		padding: 1rem;
+
+		img {
+			width: 50%;
+			height: 100%;
+		}
+	}
+}
+
+//contact page
+
+h1{
+	font-size: 3rem;
+}
+
+.history-content{
+	margin-top: 2rem;
+}
