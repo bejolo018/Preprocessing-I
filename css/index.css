@@ -165,7 +165,7 @@ header :hover {
   border: 1px solid black;
   border-radius: 0.5rem;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 20rem;
 }
 .about-content .mainpage-content {
   display: flex;
@@ -182,11 +182,16 @@ header :hover {
   flex-wrap: wrap;
   margin-left: 45rem;
   flex-direction: column;
-  font-size: 3rem;
-  margin-top: -23rem;
+  font-size: 2rem;
+  margin-top: -35rem;
 }
 .skills-content h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
+  margin-right: 20rem;
+  margin-bottom: 2rem;
+}
+.skills-content ul {
+  margin-left: 2rem;
 }
 .portfolio-content {
   display: flex;
@@ -211,4 +216,22 @@ h1 {
 }
 .history-content {
   margin-top: 2rem;
+}
+@media (max-width: 500px) {
+  img {
+    width: 90%;
+  }
+  .skills-content {
+    margin-top: 5rem;
+    margin-left: 1rem;
+  }
+  .about-content {
+    margin-top: 0rem;
+  }
+  .portfolio-content {
+    flex-direction: column;
+  }
+  .portfolio-content .card {
+    width: 98%;
+  }
 }
